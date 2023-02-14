@@ -1,0 +1,23 @@
+Update docker-compose3
+- application.properties: Changed port to 8080
+- application-yml: Changed port to 8080
+- tutorials-docker.Dockerfile: Changed openjdk to 18
+
+
+
+changelog created
+
+- application.properties
+    - uses port 8104
+
+- application.yml
+    - uses port 80
+
+- tutorials-docker.Dockerfile
+    - uses openjdk:8
+
+- docker-compose.yml
+    -     expose:
+           - 80 #Originalmente 8080
+          ports:
+            - "80:8080"
