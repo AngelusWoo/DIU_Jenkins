@@ -12,7 +12,6 @@ import lombok.RequiredArgsConstructor;
 public class TutorialController {
 	private final TutorialServiceImpl tService;
 
-
     //GET
     @GetMapping("/tutorials")
 	public ResponseEntity<?> getAllTutorials() {
